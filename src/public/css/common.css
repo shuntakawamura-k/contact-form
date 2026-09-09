@@ -1,0 +1,29 @@
+/* 全体レイアウト */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+.header {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700; /* フルーツイメージのアクセントカラー */
+    text-decoration: none;
+}
+
+/* 共通コンテナ */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}

@@ -1,0 +1,25 @@
+.product-detail {
+    display: flex;
+    gap: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.product-detail__image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-detail__content {
+    flex: 1;
+}
+
+.product-detail__price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e60012;
+    margin: 15px 0;
+}
