@@ -1,25 +1,160 @@
+/* 全体コンテナ */
+.show-container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #85b0d8;
+}
+
+.breadcrumb a {
+    color: #85b0d8;
+    text-decoration: none;
+}
+
+/* メインのカード部分（左右2カラム） */
 .product-detail {
     display: flex;
     gap: 40px;
-    background: #fff;
+    background: #ffffff;
     padding: 30px;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
 }
 
+/* 左側：画像エリア */
+.product-detail__left {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.image-preview img,
 .product-detail__image {
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: 260px;
     object-fit: cover;
     border-radius: 8px;
+    background-color: #f8f8f8;
 }
 
-.product-detail__content {
+/* 右側：フォーム入力エリア */
+.product-detail__right {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+/* フォームグループ */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.description-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* 価格表示用のアクセント（必要な場合） */
 .product-detail__price {
     font-size: 24px;
     font-weight: bold;
     color: #e60012;
-    margin: 15px 0;
+    margin: 10px 0;
+}
+
+/* 季節チェックボックス */
+.checkbox-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 商品説明エリア */
+.description-group {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.description-group textarea {
+    resize: vertical;
+}
+
+/* ボタン配置 */
+.form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 32px;
+    background-color: #e0e0e0;
+    color: #333333;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-save {
+    padding: 10px 32px;
+    background-color: #f5b000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn-delete {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
 }

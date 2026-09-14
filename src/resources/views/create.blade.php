@@ -1,3 +1,16 @@
+@extends('layouts.app')
+
+@section('title', '商品登録')
+
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/create.css') }}">
+@endsection
+
+@section('content')
+<div class="create-content">
+    <!-- 登録フォームの内容 -->
+</div>
+@endsection
 <!DOCTYPE html>
 <html lang="ja">
 

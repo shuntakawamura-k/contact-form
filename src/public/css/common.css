@@ -1,29 +1,33 @@
 /* 全体レイアウト */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
-/* ヘッダー */
 .header {
-    background-color: #fff;
-    padding: 20px 40px;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff !important; /* 完全な白を指定 */
+    padding: 15px 40px;
+    border-bottom: 1px solid #e5e5e5; /* 必要に応じて下線を追加 */
+}
+
+.header__inner {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header__logo {
+    color: #f39c12;
     font-size: 24px;
     font-weight: bold;
-    color: #ffd700; /* フルーツイメージのアクセントカラー */
     text-decoration: none;
+    font-style: italic;
 }
 
-/* 共通コンテナ */
-.container {
-    max-width: 1000px;
-    margin: 40px auto;
+.main {
+    max-width: 1200px;
+    margin: 30px auto;
     padding: 0 20px;
 }

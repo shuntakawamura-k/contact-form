@@ -1,3 +1,16 @@
+@extends('layouts.app')
+
+@section('title', '商品詳細・編集')
+
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/edit.css') }}">
+@endsection
+
+@section('content')
+<div class="edit-content">
+    <!-- 編集フォームの内容 -->
+</div>
+@endsection
 <!DOCTYPE html>
 <html lang="ja">
 
